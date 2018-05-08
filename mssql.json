@@ -1,9 +1,9 @@
 {
     "AWSTemplateFormatVersion":"2010-09-09",
-    "Description":"MSSQL RDS for QA Environment",
+    "Description":"MSSQL RDS Instance Provision",
     "Outputs":{
         "mssqlurl":{
-            "Description":"Output endpoint",
+            "Description":"Output MSSQL Endpoint",
             "Value":{
                 "Fn::GetAtt":[
                     "DBInstance",
@@ -42,7 +42,7 @@
         },
         "Storage":{
             "Default":"50",
-            "Description":"storage space for mssql",
+            "Description":"Storage Size of MSSQL RDS Instance",
             "Type":"String"
         },
         "Subnet1":{
